@@ -15,4 +15,9 @@ def deleteElement(arr, key):
 
     if pos == -1:
         print('Element not found in the array')
+        return arr
+    
+    # create a new array with one less element
+    new_arr = array.array(arr.typecode, [0] * (len(arr) - 1))
+    
 
