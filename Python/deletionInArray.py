@@ -26,6 +26,21 @@ def deleteElement(arr, key):
         new_arr[i] = arr[i]
     for i in range(pos + 1, len(arr)):
         new_arr[i - 1] = arr[i]
-    
+
+    return new_arr
+
+# Create an array
+arr = array.array('i', [10, 20, 30, 40, 50])
+key_to_delete = 30
+
+# find the element 
+print(f"Index of {key_to_delete}: {findElement(arr, key_to_delete)}")
+
+# delete element
+# print(f"Array after {key_to_delete} id deleted: {deleteElement(arr, key_to_delete)}")
+
+arr = deleteElement(arr, key_to_delete).tolist()
+
+print(f"Array after deletion: {arr}")
 
 
