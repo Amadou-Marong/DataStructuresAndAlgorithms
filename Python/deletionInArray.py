@@ -19,5 +19,13 @@ def deleteElement(arr, key):
     
     # create a new array with one less element
     new_arr = array.array(arr.typecode, [0] * (len(arr) - 1))
+
+    # copy elements of the original array to the new array except the element to be deleted
+
+    for i in range(pos):
+        new_arr[i] = arr[i]
+    for i in range(pos + 1, len(arr)):
+        new_arr[i - 1] = arr[i]
     
+
 
