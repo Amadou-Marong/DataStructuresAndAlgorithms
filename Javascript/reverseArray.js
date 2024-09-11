@@ -20,9 +20,14 @@ function printArray(arr) {
 
 let arr = [1, 2, 3, 4, 5, 6]
 
+console.log("Original");
+
+printArray(arr)
+
 reverseArray(arr, 0, arr.length-1)
 
-console.log(arr);
+console.log("Reversed");
+printArray(arr)
 
 
 
