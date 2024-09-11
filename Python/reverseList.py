@@ -8,3 +8,12 @@ def reverseList(A, start, end):
         end -= 1
 
 
+# Driver function to test the above function
+
+A = [1, 2, 3, 4, 5, 6]
+
+print(A)
+
+reverseList(A, 0, 5)
+
+print(f"reversed list is: {A}")
