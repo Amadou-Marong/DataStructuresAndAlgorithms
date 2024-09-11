@@ -6,4 +6,7 @@ def reverseList(A, start, end):
     if start >= end:
         return
     A[start], A[end] = A[end], A[start]
-    
+    reverseList(A, start+1, end-1)
+
+
+
