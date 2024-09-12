@@ -1,9 +1,11 @@
+
 def findElement(arr, n, key):
     for i in range(n):
         if arr[i] == key:
             return i
-        # if key is not found
-        return -1
+    
+    # if key is not found
+    return -1
 
 
 # Example usage
@@ -13,6 +15,13 @@ if __name__ == "__main__":
 
     # key to search for
     key = 3
+
+
+    arr = [4, 2, 7, 1, 9, 3]
+    
+    # Key to search for
+    key = 9
+
 
     # get the length of the array
 
