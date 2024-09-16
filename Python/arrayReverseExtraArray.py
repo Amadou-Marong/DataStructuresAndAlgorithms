@@ -11,4 +11,4 @@ def reverse_array_extra_array(arr):
 # example usage
 original_array = [1,4,5,6,7,8]
 
-reverse_array_extra_array(original_array, end=" ")
+reverse_array_extra_array(original_array)
