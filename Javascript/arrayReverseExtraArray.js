@@ -3,7 +3,11 @@ function reverseArrayExtraArray(arr) {
 
     // print reversed array
     process.stdout.write("Reversed Array: ")
-    reversedArr.foreach(element => process.stdout.write(element + " "));
+    reversedArr.forEach(element => process.stdout.write(element + " "));
 }
 
 // Example usage
+const originalArray = [1, 2, 3, 4, 5]
+reverseArrayExtraArray(originalArray)
+
+
