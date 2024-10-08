@@ -4,6 +4,10 @@ class Node:
         self.data = data
         self.next = None
 
+# function to insert node after a given node
+def insert_after(head, key, new_data):
+    pass
+
 # create a function to print the nodes
 def print_list(head):
     curr = head
