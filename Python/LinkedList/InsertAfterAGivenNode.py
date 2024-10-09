@@ -6,7 +6,21 @@ class Node:
 
 # function to insert node after a given node
 def insert_after(head, key, new_data):
-    pass
+    # traverse the list
+    curr = head
+    while curr is not None:
+        if curr.data == key:
+            break
+        curr = curr.next
+
+    if curr == None:
+        return  head
+    
+    new_node = Node(new_data)
+    new_node.next = curr.next
+    curr.next = new_node
+
+    return new_node
 
 # create a function to print the nodes
 def print_list(head):
@@ -25,3 +39,6 @@ if __name__ == "__main__":
     head.next.next = Node(4)
     head.next.next.next = Node(5)
 
+    data = 3
+    insert_after(head, 2, data)
+    print_list(head)
