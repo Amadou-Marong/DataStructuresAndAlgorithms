@@ -12,7 +12,11 @@ def insert_before(head, key, new_data):
 # create a function to print the nodes
 
 def print_list(head):
-    pass
+    curr = head
+    while curr is not None:
+        print(f"{curr.data}", end="->")
+        curr = curr.next
+    print()
 
 
 # code execution starts here
