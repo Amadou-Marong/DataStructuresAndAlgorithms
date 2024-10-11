@@ -7,8 +7,29 @@ class Node:
 
 
 # function to insert a node at a specific position in linked list
-def insert_at(head, postion):
-    pass
+def insert_at(head, postion, new_data):
+    # create a new node
+    new_node = Node(new_data)
+    # if the position is at 1
+    if postion == 1:
+        new_node.next = head
+        head = new_node
+        return head
+    
+    curr = head
+    for _ in range(1, postion-1):
+        if curr is None:
+            break
+        curr = curr.next
+
+    # if current is none
+    if curr is None:
+        print("Position is out of bounds")
+        return head
+
+    new_node.next = curr.next
+    curr.next = new_node
+    return head 
 
 
 # function to print linked list
@@ -26,4 +47,5 @@ if __name__ == "__main__":
     head.next.next = Node(8)
     head.next.next.next = Node(10)
 
+    
     print_list(head)
