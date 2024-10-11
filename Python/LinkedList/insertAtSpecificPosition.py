@@ -40,6 +40,7 @@ def print_list(head):
         curr = curr.next
     print()
 
+
 # code execution starts here
 if __name__ == "__main__":
     head = Node(3)
@@ -47,5 +48,7 @@ if __name__ == "__main__":
     head.next.next = Node(8)
     head.next.next.next = Node(10)
 
-    
+    data, position = 12, 2
+    head = insert_at(head, position, data)
+
     print_list(head)
