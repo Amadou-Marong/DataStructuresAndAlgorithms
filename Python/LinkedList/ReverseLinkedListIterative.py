@@ -39,5 +39,9 @@ if __name__ == "__main__":
     head.next.next.next = Node(4)
     head.next.next.next.next = Node(5)
 
-    
+    print("Original List")
+    print_list(head)
+
+    print("Reversed List")
+    head = reverse_list(head)
     print_list(head)
