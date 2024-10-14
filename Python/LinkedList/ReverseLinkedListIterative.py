@@ -7,6 +7,19 @@ class Node:
         self.next = None
 
 
+# function to reverse list
+def reverse_list(head):
+    prev = None
+    curr = head
+    
+    while curr is not None:
+        next_node = curr.next
+
+        curr.next = prev
+        prev = curr
+
+    return prev
+
 # function to printList
 def print_list(head):
     curr = head
@@ -22,3 +35,6 @@ if __name__ == "__main__":
     head.next = Node(2)
     head.next.next = Node(3)
     head.next.next.next = Node(4)
+
+    
+    print_list(head)
