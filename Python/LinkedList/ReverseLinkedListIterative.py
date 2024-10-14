@@ -18,6 +18,8 @@ def reverse_list(head):
         curr.next = prev
         prev = curr
 
+        curr = next_node
+
     return prev
 
 # function to printList
