@@ -27,7 +27,17 @@ def is_valid_parenthesis(s):
             
     # if an opening bracket without closing
     return len(stack) == 0
-    
+
+
+# example
+s = '{()}[]'
+
+if is_valid_parenthesis(s):
+    print("Valid Parenthesis")
+else:
+    print("Invalid Parenthesis")
+
+
             
 
 
