@@ -26,6 +26,7 @@ def is_valid_parenthesis(s):
                 return False
             
     # if an opening bracket without closing
+    return len(stack) == 0
     
             
 
