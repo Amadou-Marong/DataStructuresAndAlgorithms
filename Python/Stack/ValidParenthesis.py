@@ -12,7 +12,11 @@ def is_valid_parenthesis(s):
         # closing the bracket
 
         if char in ')}]':
-            pass
+            
+            # closing bracket without opening
+            if not stack:
+                return False
+            
 
 
 
