@@ -25,6 +25,9 @@ def is_valid_parenthesis(s):
                 (top == '[' and char != ']'):
                 return False
             
+    # if an opening bracket without closing
+    
+            
 
 
 
