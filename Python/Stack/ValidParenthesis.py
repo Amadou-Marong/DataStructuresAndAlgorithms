@@ -17,6 +17,15 @@ def is_valid_parenthesis(s):
             if not stack:
                 return False
             
+            # else pop an item check for matching
+            top = stack.pop()
+
+            if (top == '(' and char != ')') or \
+                (top == '{' and char != '}') or \
+                (top == '[' and char != ']'):
+                return False
+            
+
 
 
 
