@@ -11,7 +11,7 @@ const isValidParenthesis = (s) => {
             if (stack.length > 0 && 
                 ((stack[stack.length -1] === '(' && s[i] === ')')) || 
                 ((stack[stack.length -1] === '{' && s[i] === '}')) || 
-                ((stack[stack.length -1] === ']' && s[i] === ']'))
+                ((stack[stack.length -1] === '[' && s[i] === ']'))
             ) {
                 stack.pop() // Pop the matching opening bracket
             } else {
@@ -23,3 +23,8 @@ const isValidParenthesis = (s) => {
     // If stack is empty, return true (balanced), otherwise false
     return stack.length === 0;
 }
+
+let s = "{()}[]";
+
+console.log(isValidParenthesis(s) ? "Valid Parenthesis" : "Invalid Parenthesis")
+
