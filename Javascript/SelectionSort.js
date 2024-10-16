@@ -8,7 +8,11 @@ function selectionSort(array) {
             }
         }
         if (lowestNumberIndex != i) {
-            
+            temp = array[i]
+            array[i] = array[lowestNumberIndex]
+            array[lowestNumberIndex] = temp
         }
     }
+    return array
 }
+
