@@ -14,19 +14,19 @@ class PriorityQueue(object):
         self.queue.append(data)    
     
     def serve(self):    
-            try:
-                max = 0
-                for i in range(len(self.queue)):
-                    if self.queue[i] > self.queue[max]:
-                        max = i
-                
-                item = self.queue[max]
-                del self.queue[max]
-                return item
-    
-            except IndexError:
-                print()
-                exit()
+        try:
+            max = 0
+            for i in range(len(self.queue)):
+                if self.queue[i] > self.queue[max]:
+                    max = i
+            
+            item = self.queue[max]
+            del self.queue[max]
+            return item
+
+        except IndexError:
+            print()
+            exit()
 
 
 queue = PriorityQueue()
