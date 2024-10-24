@@ -42,4 +42,5 @@ myqueue.joinQueue(1)
 myqueue.joinQueue(14)
 myqueue.joinQueue(7)
 
-console.log(myqueue);
+console.log(myqueue.toString());
+
