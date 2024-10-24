@@ -24,10 +24,12 @@ class PriorityQueue {
                 if (this.queue[i] > this.queue[maxIndex]) {
                     maxIndex = i
                 }
-                const item = this.queue[maxIndex]
-                this.queue.splice(maxIndex, 1)
-                return item
             }
+
+            const item = this.queue[maxIndex]
+            this.queue.splice(maxIndex, 1)
+            return item
+            
         } catch (error) {
             console.log(error);
             process.exit()
@@ -44,3 +46,6 @@ myqueue.joinQueue(7)
 
 console.log(myqueue.toString());
 
+while(!myqueue.isEmpty()) {
+    process.stdout.write(`${myqueue.serve()}, `)
+}
