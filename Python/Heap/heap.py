@@ -12,3 +12,16 @@ heapq.heapify(my_list)
 # print the heap queue
 
 print(my_list)
+
+# push elements to the heap
+heapq.heappush(my_list, 4)
+
+print("The heap after we pushed 4")
+print(my_list)
+
+
+# using heappop to pop the smallest element from the queue
+popped_element = heapq.heappop(my_list)
+
+print(f"The heap after popping the smallest element {popped_element} from the queue")
+print(my_list)
