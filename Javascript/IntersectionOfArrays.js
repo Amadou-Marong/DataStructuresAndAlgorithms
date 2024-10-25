@@ -1,20 +1,22 @@
 // This program is to check the intersection of two arrays
 
-function instersection(first_array, second_array) {
+function instersection(firstArray, secondArray) {
     let result = []
 
-    for (let i=0; i<first_array.length; i++) {
+    for (let i=0; i<firstArray.length; i++) {
 
-        for (let j=0; j<second_array.length; i++) {
-            if(first_array[i] === second_array[j]) {
-                result.push(first_array[i])
+        for (let j=0; j<secondArray.length; j++) {
+            if(firstArray[i] === secondArray[j]) {
+                result.push(firstArray[i])
+                break
             }    
         }
     }
     return result
 }
 
-let first_array = [3, 1, 4, 2]
-let second_array = [4, 5, 3, 6]
+let firstArray = [3, 1, 4, 2]
+let secondArray = [4, 5, 3, 6]
 
-console.log(instersection(first_array, second_array));
+let intersect = instersection(firstArray, secondArray)
+console.log(intersect);
