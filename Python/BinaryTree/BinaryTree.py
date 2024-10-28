@@ -24,3 +24,13 @@ root.right = Node(3)
         2     3
     / \ / \
 None None None None'''
+
+root.left.left = Node(4)
+'''4 becomes left child of 2
+        1
+    /     \
+    2         3
+    / \     / \
+4 None None None
+/ \
+None None'''
