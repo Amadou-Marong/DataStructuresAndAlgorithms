@@ -9,5 +9,17 @@ class Node:
 
 # create root 
 root = Node(1)
+''' following is the tree after above statement
+        1
+    / \
+    None None'''
+
 root.left = Node(2)
+''' 2 and 3 become left and right children of 1
+        1
+        / \
+        2     3
+    / \ / \
+None None None None'''
+
 root.right = Node(3)
