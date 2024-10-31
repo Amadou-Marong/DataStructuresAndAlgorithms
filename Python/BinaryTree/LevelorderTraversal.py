@@ -7,6 +7,8 @@ class Node:
         self.right = None
 
 
+# Iterative Method to print the
+# height of a binary tree
 def printLevelOrder(root):
 
     # Base case
@@ -16,4 +18,3 @@ def printLevelOrder(root):
     # create an empty queue for level order traversal
     queue = []
 
-    
