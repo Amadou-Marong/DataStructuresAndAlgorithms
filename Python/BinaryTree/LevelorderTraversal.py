@@ -6,3 +6,14 @@ class Node:
         self.left = None
         self.right = None
 
+
+def printLevelOrder(root):
+
+    # Base case
+    if root is None:
+        return
+
+    # create an empty queue for level order traversal
+    queue = []
+
+    
