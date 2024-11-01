@@ -10,6 +10,17 @@ class Node:
 
 
 
+# print nodes at a current level
+def printCurrentLevel(root, level):
+    if root is None:
+        return
+    if level == 1:
+        print(root.data, end=" ")
+    elif level > 1:
+        printCurrentLevel(root.left, level - 1)
+        printCurrentLevel(root.right, level - 1)
+
+
 
 # compute the height of a tree
 def height(node):
