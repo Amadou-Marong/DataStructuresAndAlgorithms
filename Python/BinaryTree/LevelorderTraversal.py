@@ -33,6 +33,18 @@ def printLevelOrder(root):
             queue.append(node.left)
 
         # Enqueue right child
-        
+        if node.right is not None:
+            queue.append(node.right)
+
+    
+# Driver Program to test above function
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+
+print ("Level Order Traversal of binary tree is -")
+printLevelOrder(root)
 
     
