@@ -7,6 +7,8 @@ class PrintManager:
         self.queue.append(document)
     
     def run(self):
+        if len(self.queue) == 0:
+            print("The Queue is Empty")
         while (len(self.queue) != 0):
             print(self.queue.pop(0))
         
