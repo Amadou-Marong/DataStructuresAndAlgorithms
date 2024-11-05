@@ -4,7 +4,7 @@ class Node:
         self.left = None
         self.right = None
 
-# fuction to searc a key in a BST
+# fuction to search a key in a BST
 def search(root, key):
 
     
