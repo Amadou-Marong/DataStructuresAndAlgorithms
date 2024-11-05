@@ -12,12 +12,12 @@ def search(root, key):
         return root
 
     # if the key is greater than the roots key
-    if root.data > key:
+    if root.data < key:
         return search(root.right, key)
     
     # if the key is less than the roots key
-    if root.data < key:
-        return search(root.left, key)
+    
+    return search(root.left, key)
 
 
 root = Node(50)
@@ -28,5 +28,10 @@ root.left.right = Node(40)
 root.right.left = Node(60)
 root.right.right = Node(80)
 
+
+# Searching for keys in BST
+
+print("Found" if search(root, 19) else "Not Found")
+print("Found" if search(root, 80) else "Not Found")
 
     
