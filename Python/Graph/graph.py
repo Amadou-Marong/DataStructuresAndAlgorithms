@@ -16,4 +16,9 @@ class Graph:
         frm = self.vertices[frm]
         to = self.vertices[to]
         self.adjMatrix[frm][to] = cost
-    
+
+        # for directed graph do not add this
+        self.adjMatrix[to][frm] = cost
+
+    def get_vertex(self):
+        return self.verticeslist
