@@ -22,3 +22,9 @@ class Graph:
 
     def get_vertex(self):
         return self.verticeslist
+
+    def get_edges(self):
+        edges = []
+        for i in range (self.numvertex):
+            for j in range (self.numvertex):
+                	
