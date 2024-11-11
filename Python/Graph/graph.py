@@ -27,4 +27,6 @@ class Graph:
         edges = []
         for i in range (self.numvertex):
             for j in range (self.numvertex):
-                	
+                if (self.adjMatrix[i][j]!=-1):
+                
+        
