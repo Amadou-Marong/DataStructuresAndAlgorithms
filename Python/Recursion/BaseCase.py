@@ -3,5 +3,5 @@ def fact(num):
         return 1
     return num * fact(num-1)
 
-mynum = 5
+mynum = 10
 print(f"factorial of {mynum} is {fact(mynum)}")
