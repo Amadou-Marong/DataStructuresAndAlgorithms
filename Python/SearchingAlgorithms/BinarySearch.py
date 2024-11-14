@@ -19,7 +19,7 @@ def binarySearch(arr, key):
          
 
 arr = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-key = 11
+key = 9
 
 result = binarySearch(arr, key)
 
