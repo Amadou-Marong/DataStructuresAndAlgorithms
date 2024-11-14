@@ -23,7 +23,10 @@ key = 9
 
 result = binarySearch(arr, key)
 
-if result != -1:
-    print(f"The value {key} is found at index {result} of the array")
-else:
-    print(f"The value {key} is not found in the array")
+# if result != -1:
+#     print(f"The value {key} is found at index {result} of the array")
+# else:
+#     print(f"The value {key} is not found in the array")
+
+
+print(f"The value {key} is found at index {result} of the array" if result!= -1 else f"The value {key} is not found in the array")
