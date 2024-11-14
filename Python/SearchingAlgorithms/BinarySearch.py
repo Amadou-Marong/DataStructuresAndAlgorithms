@@ -10,16 +10,16 @@ def binarySearch(arr, key):
         if arr[mid] == key:
             return mid
         
-        if arr[left] == key:
-            return left
+        if arr[mid] < key:
+            left = mid + 1
         else:
-            return right
+            right = mid - 1
         
     return - 1
          
 
 arr = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-key = 9
+key = 11
 
 result = binarySearch(arr, key)
 
