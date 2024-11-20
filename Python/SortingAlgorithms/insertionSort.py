@@ -9,5 +9,16 @@ def insertionSort(arr):
         while key >= 0 and key < arr[i]:
             key = arr[i]
             i -= 1
-        
+        arr[i + 1] = key
+
+
+# function to print array elements
+def printArray(arr):
+    for val in arr:
+        print(val, end=" ")
+    print()
+
+
+if __name__ == "__main__":
+    arr = [12, 11, 13, 5, 6]
             
