@@ -2,14 +2,14 @@
 
 def insertionSort(arr):
     n = len(arr)
-    for j in range(1, n):
-        key = arr[j]
-        i = j - 1
+    for i in range(1, n):
+        key = arr[i]
+        j = i - 1
         
-        while i >= 0 and key < arr[i]:
-            arr[i + 1] = arr[i]
-            i -= 1
-        arr[i + 1] = key
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
 
 
 # function to print array elements
