@@ -21,22 +21,22 @@ def mergeSort(arr):
         i = j = k = 0
         
         # copy the data to temp array L[], and R[]
-        while i <= len(L) and j <= len(R):
+        while i < len(L) and j < len(R):
             if L[i] < R[j]:
                 arr[k] = L[i]
                 i += 1
             else:
                 arr[k] = R[j]
                 j += 1
-        k += 1
+            k += 1
         
         # copy the remaining data
-        while i <= len(L):
+        while i < len(L):
             arr[k] = L[i]
             i += 1
             k += 1
             
-        while j <= len(R):
+        while j < len(R):
             arr[k] = R[j]
             j += 1
             k += 1
