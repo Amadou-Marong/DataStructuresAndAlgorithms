@@ -12,4 +12,9 @@ def mergeSort(arr):
         
         R = arr[mid:]
         
+        # sort the first half
+        mergeSort(L)
+        
+        # sort the second half
+        mergeSort(R)
         
