@@ -12,5 +12,5 @@ def partition(arr, low, high):
     # traverse through all the elements and compare each element with the pivot
     
     for j in range(low, high):
-        if array[j] <= pivot:
+        if arr[j] <= pivot:
             
