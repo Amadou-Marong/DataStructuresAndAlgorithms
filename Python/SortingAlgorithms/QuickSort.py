@@ -6,3 +6,11 @@ def partition(arr, low, high):
     # choose a pivot index
     pivot = arr[high]
     
+    # pointer for greater element
+    i = low - 1
+    
+    # traverse through all the elements and compare each element with the pivot
+    
+    for j in range(low, high):
+        if array[j] <= pivot:
+            
