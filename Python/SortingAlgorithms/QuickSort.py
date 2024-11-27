@@ -39,3 +39,19 @@ def quickSort(arr, low, high):
         
         quickSort(arr, pi+1, high)
         
+
+# Driver code
+if __name__ == "__main__":
+    
+    arr = [10, 7, 8, 9, 1, 5]
+    
+    n = len(arr)
+    
+    print("Original array")
+    print(arr)
+    
+    quickSort(arr, 0, n)
+    
+    print("Sorted Array")
+    
+    
