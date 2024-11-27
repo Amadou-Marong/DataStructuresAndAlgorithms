@@ -50,8 +50,9 @@ if __name__ == "__main__":
     print("Original array")
     print(arr)
     
-    quickSort(arr, 0, n)
+    quickSort(arr, 0, n-1)
     
     print("Sorted Array")
     
+    print(arr)
     
