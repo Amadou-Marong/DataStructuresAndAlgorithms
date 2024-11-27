@@ -32,4 +32,7 @@ def quickSort(arr, low, high):
         # pi for partition index returned of pivot
         pi = partition(arr, low, high)
         
+        # recursions calls on smaller elements 
+        quickSort(arr, low, pi-1)
+        
         
