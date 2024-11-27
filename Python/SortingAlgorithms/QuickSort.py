@@ -35,4 +35,7 @@ def quickSort(arr, low, high):
         # recursions calls on smaller elements 
         quickSort(arr, low, pi-1)
         
+        # recursion calls on the higher or equal elements
+        
+        quickSort(arr, pi+1, high)
         
