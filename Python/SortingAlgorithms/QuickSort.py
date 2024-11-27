@@ -17,7 +17,9 @@ def partition(arr, low, high):
             swap(arr, i, j)
     
     # Move pivot after smaller elements and return its value
-    
+    swap(arr, i + 1, high)
+    return i + 1
+
 
 # define a swaf function
 def swap(arr, i, j):
