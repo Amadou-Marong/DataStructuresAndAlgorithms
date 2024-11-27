@@ -13,4 +13,11 @@ def partition(arr, low, high):
     
     for j in range(low, high):
         if arr[j] <= pivot:
-            
+            i += 1
+            swap(arr, i, j)
+
+# define a swaf function
+def swap(arr, i, j):
+    arr[i], arr[j] = arr[j], arr[i]
+    
+    
