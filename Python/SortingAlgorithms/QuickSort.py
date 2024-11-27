@@ -25,4 +25,11 @@ def partition(arr, low, high):
 def swap(arr, i, j):
     arr[i], arr[j] = arr[j], arr[i]
     
-    
+# the quicksort function implementation
+def quickSort(arr, low, high):
+    if low < high:
+        
+        # pi for partition index returned of pivot
+        pi = partition(arr, low, high)
+        
+        
