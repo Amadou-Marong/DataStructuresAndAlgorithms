@@ -18,3 +18,16 @@ function nth_fibbnacci_util(n, memo) {
     return memo[n]
 }
 
+// the main function
+
+function nth_fibbnacci(n) {
+    let memo = new Array(1 + n).fill(-1)
+
+    return nth_fibbnacci_util(n, memo)
+}
+
+let n = 7
+
+let result = nth_fibbnacci(n)
+
+console.log(result);
