@@ -12,7 +12,7 @@ def nth_fibbonacci_util(n, memo):
     
     # Recursive case: calculate Fibonacci number
     # and store it in memo
-    memo = nth_fibbonacci_util(n - 1, memo) + nth_fibbonacci_util(n - 2, memo)
+    memo[n] = nth_fibbonacci_util(n - 1, memo) + nth_fibbonacci_util(n - 2, memo)
     
     return memo[n]
 
@@ -25,8 +25,11 @@ def nth_fibbonacci(n):
     memo = [-1] * (n + 1)
     
     # Call the utility function
-    return nth_fibbonacci_util(memo, n)
+    return nth_fibbonacci_util(n, memo)
 
 
 if __name__ == "__main__":
+    n = 7
+    result = nth_fibbonacci(n)
     
+    print(result)
