@@ -21,7 +21,7 @@ function nth_fibbnacci_util(n, memo) {
 // the main function
 
 function nth_fibbnacci(n) {
-    let memo = new Array(1 + n).fill(-1)
+    let memo = new Array(n + 1).fill(-1)
 
     return nth_fibbnacci_util(n, memo)
 }
