@@ -17,6 +17,16 @@ def nth_fibbonacci_util(n, memo):
     return memo[n]
 
 
+# Wrapper function that handles both initialization
+# and Fibonacci calculation
 def nth_fibbonacci(n):
     
-    memo = 
+    # Create a memoization table and initialize with -1
+    memo = [-1] * (n + 1)
+    
+    # Call the utility function
+    return nth_fibbonacci_util(memo, n)
+
+
+if __name__ == "__main__":
+    
