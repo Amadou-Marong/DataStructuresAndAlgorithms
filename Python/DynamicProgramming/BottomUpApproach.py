@@ -18,7 +18,7 @@ def nth_fibbonacci(n):
     return dp[n]
 
 if __name__ == "__main__":
-    n = 5
+    n = 7
     
     result = nth_fibbonacci(n)
     
