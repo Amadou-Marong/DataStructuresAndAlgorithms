@@ -17,3 +17,9 @@ def nth_fibbonacci(n):
     # we return the value at dp[n] which is the nth fibbonacci number 
     return dp[n]
 
+if __name__ == "__main__":
+    n = 5
+    
+    result = nth_fibbonacci(n)
+    
+    print(result)
