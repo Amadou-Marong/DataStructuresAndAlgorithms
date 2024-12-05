@@ -13,3 +13,8 @@ function nth_fibbonacci(n){
     return curr
 }
 
+let n = 7
+
+let result = nth_fibbonacci(n)
+
+console.log(result);
