@@ -4,19 +4,12 @@ def findDistinct(arr):
     
     results = []
     
+    arr.sort()
+    
     for i in range(len(arr)):
-        j = 0
-        
-        while(j < i):
-            # check if element is included in the results
-            if arr[i] == arr[j]:
-                break
-            j+=1
-
-        # add the element if not included previously
-        if j == i:
+        if i == 0 or arr[i] != arr[i - 1]:
             results.append(arr[i])
-            
+    
     return results
 
 if __name__ == "__main__":
