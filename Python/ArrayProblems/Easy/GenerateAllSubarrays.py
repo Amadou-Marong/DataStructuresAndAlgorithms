@@ -8,4 +8,12 @@ def generate_all_subarrays(arr):
         for j in range(i, n):
             
             # print subarrays between starting and ending points
-            
+            for k in range(i, j+1):
+                print(arr[k], end=" ")
+             
+            print('\n', end="")
+
+# Driver program
+arr = [1, 2, 3, 4]
+
+generate_all_subarrays(arr)
