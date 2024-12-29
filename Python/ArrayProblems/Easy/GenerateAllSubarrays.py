@@ -7,3 +7,5 @@ def generate_all_subarrays(arr):
         # pick ending point
         for j in range(i, n):
             
+            # print subarrays between starting and ending points
+            
