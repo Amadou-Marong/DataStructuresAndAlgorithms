@@ -1,5 +1,5 @@
 # naive approach to find the sum of all subarrays of a given array
-
+"""
 def sub_array_sum(arr):
     n = len(arr)
     result = 0
@@ -19,5 +19,6 @@ def sub_array_sum(arr):
 arr = [1, 2, 3]
 
 print(sub_array_sum(arr))
+"""
 
 # optimal approach to find the sum of all subarrays of a given array
