@@ -11,6 +11,11 @@ def sub_array_sum(arr):
         for j in range(i, n):
             
             # sum the starting and ending points
+            result  += arr[j]
+    
+    return result
+
+
 
 
 # optimal approach to find the sum of all subarrays of a given array
