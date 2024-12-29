@@ -2,6 +2,7 @@
 
 def sum_of_all_subarrays(arr):
     n = len(arr)
+    result = 0
     
     # outer loop to pick the starting index of the subarray
     for start in range(n):
@@ -11,11 +12,20 @@ def sum_of_all_subarrays(arr):
             
             # slice the array from start to end and print it
             subarray = arr[start:end + 1]
-            print(subarray)
+            # print(subarray)
+            for item in subarray:
+                result += item
+            
+    return result
+        
+
             
 # Example usage
 array = [1, 2, 3]
-print("All subarrays:")
-sum_of_all_subarrays(array)
+# print("All subarrays:")
+# sum_of_all_subarrays(array)
+
+print("Result of the sum of subarrays")
+print(sum_of_all_subarrays(array))
         
     
