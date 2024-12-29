@@ -12,7 +12,7 @@ def sum_of_all_subarrays(arr):
             
             # slice the array from start to end and print it
             subarray = arr[start:end + 1]
-            # print(subarray)
+           
             for item in subarray:
                 result += item
             
@@ -22,8 +22,6 @@ def sum_of_all_subarrays(arr):
             
 # Example usage
 array = [1, 2, 3]
-# print("All subarrays:")
-# sum_of_all_subarrays(array)
 
 print("Result of the sum of subarrays")
 print(sum_of_all_subarrays(array))
