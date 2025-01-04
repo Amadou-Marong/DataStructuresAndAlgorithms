@@ -36,7 +36,7 @@ if __name__ == "__main__":
 The approach is to traverse the array twice. In the first traversal, find the maximum element. 
 In the second traversal, find the maximum element ignoring the one we found in the first traversal.
 """
-
+"""
 def getSecondLargest(arr):
     n = len(arr)
     
@@ -58,3 +58,6 @@ def getSecondLargest(arr):
 if __name__ == "__main__":
     arr = [12, 35, 1, 10, 34, 1]
     print(getSecondLargest(arr))
+    
+"""
+
