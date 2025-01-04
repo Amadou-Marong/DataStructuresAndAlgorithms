@@ -13,7 +13,7 @@ def getSecondLargest(arr):
     
     largest = arr[-1]
     
-    # starting from the second largest element
+    # starting from the second last element as the last element is the largest
     for i in range(n-2, -1, -1):
         
         # return the first element which is not equal to the largest element
