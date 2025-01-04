@@ -22,6 +22,7 @@ def getSecondLargest(arr):
             
             return secondLargest
     
+    #  return -1 if no second largest element was found
     return -1
         
 
