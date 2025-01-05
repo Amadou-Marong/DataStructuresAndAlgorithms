@@ -7,6 +7,8 @@ find the third-largest element. The basic idea is to iterate the array
 twice and mark the maximum and second maximum element and then excluding 
 them both find the third maximum element, 
 i.e the maximum element excluding the maximum and second maximum.
+
+Time O(n) space O(1)
 """
 def getThirdLagest(arr):
     
