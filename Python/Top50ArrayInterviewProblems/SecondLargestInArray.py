@@ -61,3 +61,31 @@ if __name__ == "__main__":
     
 """
 
+"""
+# [Expected Approach] One Pass Search – O(n) Time and O(1) Space
+
+The idea is to keep track of the largest and second largest element while traversing the array. 
+Initialize largest and second largest with -1. Now, for any index i,
+
+If arr[i] > largest, update second largest with largest and largest with arr[i].
+Else If arr[i] < largest and arr[i] > second largest, update second largest with arr[i]. 
+"""
+
+def getSecondLargest(arr):
+    n = len(arr)
+    
+    largest = -1
+    secondLargest = -1
+    
+    for i in range(n):
+        if arr[i] > largest:
+            secondLargest = largest
+            largest = arr[i]
+        elif arr[i] < largest and arr[i] > secondLargest:
+            secondLargest = arr[i]
+            
+    return secondLargest
+
+if __name__ == "__main__":
+    arr = [12, 35, 1, 10, 34, 1]
+    print(getSecondLargest(arr))
