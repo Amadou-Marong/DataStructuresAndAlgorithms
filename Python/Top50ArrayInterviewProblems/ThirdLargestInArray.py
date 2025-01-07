@@ -65,13 +65,15 @@ def getThirdLargest(arr):
     
     for i in range(n):
         if arr[i] > firstLargest:
+            secondLargest = firstLargest
+            thirdLargest = secondLargest
             firstLargest = arr[i]
         
-        if arr[i] > firstLargest and arr[i] > secondLargest:
+        elif arr[i] > secondLargest:
             secondLargest = firstLargest
             firstLargest = arr[i]
         
-        if arr[i] > secondLargest and arr[i] > thirdLargest:
+        elif arr[i] > thirdLargest:
             thirdLargest = secondLargest
             secondLargest = arr[i]
     
