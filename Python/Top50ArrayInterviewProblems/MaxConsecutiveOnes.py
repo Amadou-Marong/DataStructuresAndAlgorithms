@@ -19,7 +19,7 @@ def getMaxConsecutiveOnes(nums):
         else:
             # otherwise we reset the current streak to zero(0)
             current_streak = 0
-            
+    # return the max streak    
     return max_streak
 
 
