@@ -1,8 +1,8 @@
-
-
+# python program to find the three closest sum to target in an array
 def closest3Sum(arr, target):
     # code here
     n = len(arr)
+    # initialize the minimum difference and the current sum
     minDiff = float('inf')
     closestSum = 0
     
