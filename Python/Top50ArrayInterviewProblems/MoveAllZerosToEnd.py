@@ -36,3 +36,9 @@ if __name__ == "__main__":
     arr = [1, 2, 0, 4, 3, 0, 5, 0]
     
     print(moveZerosToEnd(arr))
+    
+"""
+Time complexity: O(n), as we are traversing the array three times.
+Auxiliary Space : O(n), as we are using a temp[] array to move all the zeros.
+"""
+
