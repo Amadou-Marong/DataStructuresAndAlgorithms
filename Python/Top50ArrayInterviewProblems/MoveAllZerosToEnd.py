@@ -19,11 +19,16 @@ def moveZerosToEnd(arr):
     temp = [0] * n
     j = 0
     for i in range(n):
+        # copy all the non zero numbers from array in consecutive order to temp 
         if arr[i] != 0:
-            temp[j] = arr[i]
+            temp[j] = arr[i] 
             j+=1
+    
+    # copy the values of temp to the array 
+    for i in range(n):
+        arr[i] = temp[i]
         
-    return temp
+    return arr
     
     
 # code execution
