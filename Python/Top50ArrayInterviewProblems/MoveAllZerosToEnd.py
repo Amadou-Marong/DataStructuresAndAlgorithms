@@ -15,4 +15,19 @@ Finally, copy all the elements from temporary array to arr[].
 def moveZerosToEnd(arr):
     n = len(arr)
     
+    # create a temporary array to store the non zero numbers
+    temp = [0] * n
+    j = 0
+    for i in range(n):
+        if arr[i] != 0:
+            temp[j] = arr[i]
+            j+=1
+        
+    return temp
     
+    
+# code execution
+if __name__ == "__main__":
+    arr = [1, 2, 0, 4, 3, 0, 5, 0]
+    
+    print(moveZerosToEnd(arr))
