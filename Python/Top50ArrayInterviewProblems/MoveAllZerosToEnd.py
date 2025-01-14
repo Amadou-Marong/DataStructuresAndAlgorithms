@@ -11,7 +11,7 @@ Then, fill all the remaining positions in temporary array with 0.
 Finally, copy all the elements from temporary array to arr[].
 
 """
-
+"""
 def moveZerosToEnd(arr):
     n = len(arr)
     
@@ -36,9 +36,37 @@ if __name__ == "__main__":
     arr = [1, 2, 0, 4, 3, 0, 5, 0]
     
     print(moveZerosToEnd(arr))
-    
-"""
+
+
 Time complexity: O(n), as we are traversing the array three times.
 Auxiliary Space : O(n), as we are using a temp[] array to move all the zeros.
 """
 
+"""
+[Better Approach] Two Traversals – O(n) Time and O(1) Space
+The idea is to move all the zeros by traversing the array twice.
+"""
+def moveZerosToEnd(arr):
+    
+    n = len(arr)
+    
+    count = 0
+    
+    for i in range(n):
+        if arr[i] != 0:
+            arr[count] = arr[i]
+            count += 1
+    
+    while count < n:
+        arr[count] = 0
+        count += 1
+    
+    
+    return arr
+                
+
+# code execution
+if __name__ == "__main__":
+    arr = [1, 2, 0, 4, 3, 0, 5, 0]
+    
+    print(moveZerosToEnd(arr))
