@@ -46,6 +46,7 @@ Auxiliary Space : O(n), as we are using a temp[] array to move all the zeros.
 [Better Approach] Two Traversals – O(n) Time and O(1) Space
 The idea is to move all the zeros by traversing the array twice.
 """
+"""
 def moveZerosToEnd(arr):
     
     n = len(arr)
@@ -64,6 +65,41 @@ def moveZerosToEnd(arr):
     
     return arr
                 
+
+# code execution
+if __name__ == "__main__":
+    arr = [1, 2, 0, 4, 3, 0, 5, 0]
+    
+    print(moveZerosToEnd(arr))
+    
+# Time Complexity: O(n), as we are traversing the array only twice.
+# Auxiliary Space: O(1)
+
+"""
+
+"""
+[Expected Approach] One Traversal – O(n) Time and O(1) Space
+The idea is similar to the previous approach where we took a pointer, 
+say count to track where the next non-zero element should be placed. 
+However, on encountering a non-zero element, instead of directly placing 
+the non-zero element at arr[count], we will swap the non-zero element 
+with arr[count]. This will ensure that if there is any zero present 
+at arr[count], it is pushed towards the end of array and is not overwritten.
+
+"""
+def moveZerosToEnd(arr):
+    n = len(arr)
+    
+    count = 0
+    
+    for i in range(n):
+        if arr[i] != 0:
+            arr[count], arr[i] = arr[i], arr[count]
+            count += 1
+    
+    
+    return arr
+    
 
 # code execution
 if __name__ == "__main__":
