@@ -90,14 +90,19 @@ at arr[count], it is pushed towards the end of array and is not overwritten.
 def moveZerosToEnd(arr):
     n = len(arr)
     
+    # Pointer to track the position for next non-zero element
     count = 0
     
+    # itterate over the entire array
     for i in range(n):
+        # check if a non zero element is encountered
         if arr[i] != 0:
-            arr[count], arr[i] = arr[i], arr[count]
+            # swap the current element with the 0 at index count
+            arr[i], arr[count] = arr[count], arr[i]
+            # increment the count
             count += 1
     
-    
+    # return the array 
     return arr
     
 
