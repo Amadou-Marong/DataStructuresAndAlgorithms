@@ -6,14 +6,18 @@ def reverseArray(arr, k):
     if k == 1:
         return arr
     
-    left = 0
-    right = n - 1
     
-    while right > left:
-        arr[left], arr[right] = arr[right], arr[left]
+    # Loop through the array in steps of size k
+    for i in range(0,n,k):
         
-        left += 1
-        right -= 1
+        left = i
+        right = min(i+k-1, n-1)
+        
+        while right > left:
+            arr[left], arr[right] = arr[right], arr[left]
+            
+            left += 1
+            right -= 1
     
     return arr
 
