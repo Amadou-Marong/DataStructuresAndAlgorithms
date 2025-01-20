@@ -1,3 +1,10 @@
+# [Naive Approach] Rotate one by one – O(n * d) Time and O(1) Space
+
+"""
+In each iteration, shift the elements by one position to the left in a circular 
+fashion (the first element becomes the last). Perform this operation d times to 
+rotate the elements to the left by d positions.
+"""
 def rotateArray(arr, d):
     n = len(arr)
     
