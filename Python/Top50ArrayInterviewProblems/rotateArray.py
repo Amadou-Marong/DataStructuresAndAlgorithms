@@ -38,9 +38,13 @@ def rotateArray(arr, d):
     n = len(arr)
     temp = [0] * n
     
+    # for i in range(n-d):
+    #     print(arr[i])
+        
     for i in range(n-d):
-        print(arr[i])
+        temp[i] = (arr[d+i])
 
+    print(temp)
 
 arr = [1, 2, 3, 4, 5, 6]
 d = 2
