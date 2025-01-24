@@ -40,10 +40,13 @@ def rotateArray(arr, d):
     
     # for i in range(n-d):
     #     print(arr[i])
-        
+
+    # copy the last n-d elements to the front of the array 
     for i in range(n-d):
         temp[i] = (arr[d+i])
 
+    
+    
     print(temp)
 
 arr = [1, 2, 3, 4, 5, 6]
