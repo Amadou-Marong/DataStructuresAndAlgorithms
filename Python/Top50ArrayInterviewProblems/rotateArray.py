@@ -38,8 +38,11 @@ def rotateArray(arr, d):
     n = len(arr)
     temp = [0] * n
     
-    # for i in range(n-d):
-    #     print(arr[i])
+    # handle for a case when d > n
+    
+    if(d > n):
+        d = n % d
+    
 
     # copy the last n-d elements to the front of the array 
     for i in range(n-d):
