@@ -49,4 +49,14 @@ def swapArray(arr):
             arr[i], arr[i-1] = arr[i-1], arr[i]
         
         # if the next index element of the array is greater than the current even index 
-        
+        if(i < n and arr[i+1] > arr[i]):
+            
+            # then swap them
+            arr[i+1], arr[i] = arr[i], arr[i+1]
+    
+    return arr
+
+ 
+arr = [20, 10, 8, 6, 4, 2]   
+ 
+print(swapArray(arr))
