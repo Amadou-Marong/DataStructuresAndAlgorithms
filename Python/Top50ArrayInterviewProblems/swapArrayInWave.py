@@ -3,9 +3,13 @@
 def swapArray(arr):
     n = len(arr)
     
+    arr.sort()
+    
     for i in range(0, n-1, 2):
-        print(arr[i])
+        arr[i], arr[i+1] = arr[i+1], arr[i]
+    
+    return arr
 
 
 arr = [1, 2, 3, 4, 5, 6]        
-swapArray(arr)
+print(swapArray(arr))
