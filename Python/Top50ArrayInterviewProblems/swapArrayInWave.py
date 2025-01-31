@@ -48,5 +48,5 @@ def swapArray(arr):
             # then we swap them
             arr[i], arr[i-1] = arr[i-1], arr[i]
         
-            
+        # if the next index element of the array is greater than the current even index 
         
