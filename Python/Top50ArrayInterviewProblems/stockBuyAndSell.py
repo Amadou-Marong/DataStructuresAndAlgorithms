@@ -1,0 +1,24 @@
+# best time to buy and sell stock
+"""
+[Naive Approach] By exploring all possible pairs – O(n^2) Time and O(1) Space
+The idea is to use two nested loops to explore all the possible ways to buy and sell stock. 
+The outer loop decides the day to buy the stock and the inner loop decides the day to sell the stock. 
+The maximum difference between the selling price and buying price between every pair of days will be our answer. 
+"""
+
+def maxProfit(prices):
+    n = len(prices)
+    maxProfit = 0
+    
+    for i in range(n):
+        for j in range(1, n):
+            currentProfit = prices[i] - prices[j]
+        maxProfit = max(currentProfit, maxProfit)
+    
+    return maxProfit
+
+
+if __name__ == "__main__":
+    prices = [7, 10, 1, 3, 6, 9, 2]
+    
+    print(maxProfit(prices))
