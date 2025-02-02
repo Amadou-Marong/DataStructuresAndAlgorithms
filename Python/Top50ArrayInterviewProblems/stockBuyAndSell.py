@@ -49,9 +49,9 @@ def maxProfit(prices):
     return maximumProfit
 
 
-# if __name__ == "__main__":
-#     # prices = [7, 10, 1, 3, 6, 9, 2]
-#     # prices = [7, 6, 4, 3, 1]
-#     prices = [1, 3, 6, 9, 11]
+if __name__ == "__main__":
+    # prices = [7, 10, 1, 3, 6, 9, 2]
+    prices = [7, 6, 4, 3, 1]
+    # prices = [1, 3, 6, 9, 11]
     
-#     print(maxProfit(prices))
+    print(maxProfit(prices))
