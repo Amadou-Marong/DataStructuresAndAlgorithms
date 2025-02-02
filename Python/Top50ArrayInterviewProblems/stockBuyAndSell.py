@@ -10,15 +10,18 @@ def maxProfit(prices):
     n = len(prices)
     maxProfit = 0
     
-    for i in range(n):
-        for j in range(1, n):
-            currentProfit = prices[i] - prices[j]
-        maxProfit = max(currentProfit, maxProfit)
+    for i in range(n - 1):
+        for j in range(i+1, n):
+            currentProfit = prices[j] - prices[i]
+            
+            maxProfit = max(maxProfit, currentProfit)
     
     return maxProfit
 
 
 if __name__ == "__main__":
-    prices = [7, 10, 1, 3, 6, 9, 2]
+    # prices = [7, 10, 1, 3, 6, 9, 2]
+    # prices = [7, 6, 4, 3, 1]
+    prices = [1, 3, 6, 9, 11]
     
     print(maxProfit(prices))
