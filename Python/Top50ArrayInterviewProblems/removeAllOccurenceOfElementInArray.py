@@ -3,14 +3,13 @@
 def removeOccurence(arr, ele):
     n = len(arr)
     
-    temp = []
-    
+    k = 0
     for i in range(n):
         if arr[i] != ele:
-            temp.append(arr[i])
+            arr[k] = arr[i]
+            k+=1
           
-    
-    return len(temp)
+    return k 
 
     
 
