@@ -5,11 +5,10 @@ def removeOccurence(arr, ele):
     
     temp = []
     
-    k = 0
     for i in range(n):
         if arr[i] != ele:
             temp.append(arr[i])
-            k+=1
+          
     
     return len(temp)
 
